@@ -44,14 +44,14 @@ public class RCV {
 	 * The candidates. This set is immutable: it will not change. Though it is
 	 * possible for the state of each Candidate in the collection to change.
 	 */
-	Set<Candidate> candidates;
+	private Set<Candidate> candidates;
 
 	/**
 	 * The ballots. This collection is immutable: it will not change. The Ballot
 	 * objects that belong to this collection are also immutable. However, the
 	 * Candidates referenced from those Ballot objects may have changes of state.
 	 */
-	Collection<Ballot> ballots;
+	private Collection<Ballot> ballots;
 
 	/**
 	 * Constructs new instance based on given collections. The collections are used
@@ -128,7 +128,7 @@ public class RCV {
 		return parse(candidateFile, ballotFiles);
 	}
 
-	static String[] ballotFilenames(String ballotRoot, int numBallots) {
+	private static String[] ballotFilenames(String ballotRoot, int numBallots) {
 		String[] ballotFilenames = new String[numBallots];
 		for (int i = 0; i < numBallots; i++)
 			ballotFilenames[i] = ballotRoot + (i + 1) + ".txt";

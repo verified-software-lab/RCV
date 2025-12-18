@@ -9,7 +9,7 @@ public class RCVException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 
-	RCVException(String msg) {
+	public RCVException(String msg) {
 		super(msg);
 	}
 

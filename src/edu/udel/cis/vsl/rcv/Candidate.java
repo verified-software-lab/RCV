@@ -5,7 +5,7 @@ package edu.udel.cis.vsl.rcv;
  * candidates are considered equal if they have the same name; the votes is
  * considered extrinsic data and is not used in the equals method.
  */
-class Candidate {
+public class Candidate {
 
 	/**
 	 * Name of the candidate.
