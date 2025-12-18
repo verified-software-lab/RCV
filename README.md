@@ -27,13 +27,14 @@ This process is repeated as many times as requested.
 
 You need to have a Java runtime installed on your machine to use RCV.
 
-RCV has a command line interface.   To install the tool, place
-the jar file RCV.jar anywhere you like.  In your shell start-up configuration
+RCV has a command line interface.   To install the tool, download the
+file `RCV.jar` from the latest release.  Place this file anywhere you like
+on your local machine.  In your shell start-up configuration
 script (e.g., `.profile`, `.bash_profile`, or `.zprofile`) create an alias
 as follows:
 
 ```
-alias rcv="java -cp /path/to/RCV.jar edu.udel.cis.vsl.rcv.RCV"
+alias rcv="java -jar /path/to/RCV.jar"
 ```
 where `/path/to/RCV.jar` is replaced with the absolute path to `RCV.jar`
 on your machine.  Source the script (or log out and back in).
